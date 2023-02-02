@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: antiquewhite;
+    overflow-x: hidden;
+}
+.container{
+    /* max-width: 100%; */
+    margin-top: 25vh;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 2rem; */
+}
+.sub-header{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.item{
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: none;
+    border-radius: .5rem;
+    margin: 0 1rem;
+    /* width: 4% !important; */
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    padding: .75rem .5rem .5rem;
+    background-color: #fff;
+}
+.text-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-left{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.flex-right{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.flex-left span:first-child, .flex-right span:first-child{
+    opacity: .7;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.slick-arrow{
+    opacity: 0;
+    transition: .5s;
+}
+
+section:hover .slick-arrow{
+    opacity: 1;
+    transition: .5s;
+}
+
+.ri-arrow-left-s-line{
+    left: 10px;
+}
+
+.ri-arrow-right-s-line{
+    right: 10px;
+}
+
+.ri-arrow-right-s-line, .ri-arrow-left-s-line{
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #333;
+    font-size: 22px;
+}
+
+i{
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    padding: 10px;
+    /* -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%); */
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 1000;
+}
